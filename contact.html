@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Contactformulier</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap">
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <div class="background-h1" style="background-image: url('moestuin.jpg');">
+                    <h1>Moestuin Bibliotheek</h1>
+                </div>
+            </header>
+            <nav>
+                <ul class="top-menu">
+                    <li class="nav-menu"><a href="index.html">Home</a></li>
+                    <li class="nav-menu"><a href="groenten.html">Groenten en eigenschappen</a></li>
+                </ul>
+            </nav>
+            <main>
+                <p class="pcontactform">Door middel van onderstaand formulier kan je je vragen stellen over moestuinnieren of je tips delen die je graag terug zou zien bij de beschrijving van de groenten. </p>
+                <form name="questions" method="POST" data-netlify="true">
+                    <div class="contactform" style="background-image: url('groentetuin.jpg');">
+                        <label>Naam: </label><br>
+                        <input type="text" name="name"/><br>
+                        <label>E-mailadres: </label><br>
+                        <input type="email" name="email"/><br> 
+                        <div class="favorite">
+                            <label>Favoriete groete? <img class= "smiley" src="smiley.png" alt=":)"> :</label><br>
+                            <input type="checkbox" name="Courgette"/> Courgette<br>
+                            <input type="checkbox" name="Spinazie"/> Spinazie<br>
+                            <input type="checkbox" name="Broccoli"/> Broccoli<br>
+                            <input type="checkbox" name="Rode-kool"/> Rode Kool<br>
+                        </div>
+                        <p class="questiontip">
+                            <label>Vraag of tip: </label><br>
+                            <textarea row="50" cols="40" name="massage">
+                            </textarea>
+                        </p>
+                        <input class="submit" type="submit" value="Verstuur" /><br>
+                </div>
+                </form>
+                <br>
+                <br>
+            </main>
+            <footer>
+                <p class="pfooter"> Kijk verder op de site via onderstaande menu. </p>
+                <nav>
+                    <ul class="footer-menu">
+                        <li class="footer-li"><a href="index.html">Home</a></li>
+                        <li class="footer-li"><a href="groenten.html">Groenten en eigenschappen</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
